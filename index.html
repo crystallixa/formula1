@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>FORMULA 1 | Новости из мира Формулы 1</title>
+	<!-- *******************************************************lightbox -->
+		<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
+
+		<!-- JS -->
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="fancybox/dist/jquery.fancybox.min.js"></script>
+	
+	<!--*************************************************************jQuery-->
+	<link href="bxslider/dist/jquery.bxslider.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="bxslider/dist/jquery.bxslider.js"></script>
+	
+	<!-- *************************************Font Awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--**************************************** Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/js/bootstrap.js" rel="stylesheet">
+</head>
+ <body>
+ <!--*************************СОДЕРЖИМОЕ ВСЕЙ СТРАНИЦЫ - это класс container*************************-->
+
+	
+ 	<div id="header">
+			<!-- <div id="header-image" ></div> -->
+			<div> <img  id="header-image" src="images/header2.jpg"/></div>
+<!--****************************************НАВИГАЦИОННАЯ ПАНЕЛЬ****************************************-->
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		 <!--Название сайта и кнопка раскрытия меню для мобильных-->
+		 <div class="navbar-header">
+		 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		 <span class="sr-only">Toggle navigation</span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 </button>
+		 <a class="navbar-brand logo" href="index.html"><img src="images/f1-logo.png"/></a>  <!-- LOGO -->
+		 </div>
+
+			<!-- Само меню-->
+			 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				 <ul class="nav navbar-nav">
+					 <li><a href="news.html">Новости</a></li>
+					 <li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Медиа <span class="caret"></span></a>
+						 <ul class="dropdown-menu" role="menu">
+							 <li><a href="photogallery.html">Фотогалерея</a></li>
+							 <li><a href="video.html">Видео</a></li>
+						 </ul>
+					 </li>
+					 <li><a href="races.html">Гонки</a></li> 
+					 <li><a href="standings.html">Таблица</a></li>
+					 <li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Рейтинг <span class="caret"></span></a>
+						 <ul class="dropdown-menu" role="menu">
+							 <li><a href="drivers.html">Гонщики</a></li> 
+							 <li><a href="teams.html">Команды</a></li> 
+						 </ul>
+					 </li>
+				 </ul> 
+			 </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</div>
+
+
+	<!--******************************************* CONTENT *******************************************-->
+	<div class="container">
+	<div class="row">
+		<div id="last-news" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<h2>Последние новости</h2><!--***************************ПОСЛЕДНИЕ НОВОСТИ-->
+				<div id="slider-news">
+					<ul class="bxslider">
+					  <li><img src="images/pic1.jpg" title="This is a news"></li>
+					  <li><img src="images/pic2.jpg" title="This is a news"></li>
+					  <li><img src="images/pic3.jpg" title="This is a news"></li>
+					  <li><img src="images/pic4.jpg" title="This is a news"></li>
+					</ul>
+				</div>
+		</div>
+		<div id="stage" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div id="next-stage">
+				<h2>Ближайший этап</h2><!--*****************************БЛИЖАЙШИЙ ЭТАП-->
+				<img class="race-img" src="images/race_3.png">
+				<div id="text-stage">
+					<h3>Третья гонка сезона</h3>
+					<p>Китай, Шанхай</p>
+					<p>12-14 апреля 2019</p>
+					<p>Трасса Шанхай</p>
+					<a class="more g_a" href="">Подробнее...</a>
+				</div>
+			</div>
+			<!--  <div class="clear"></div>  -->
+			<div id="last-stage">
+				<h2>Прошедший этап</h2><!--*****************************ПРОШЕДШИЙ ЭТАП-->
+				<img class="race-img" src="images/race_2.png">
+				<div id="text-stage">
+					<h3>Вторая гонка сезона</h3>
+					<p>Бахрейн, Сахир</p>
+					<p>29-31 марта 2019</p>
+					<p>Трасса Сахир</p>
+					<p><b>Победитель: Льюис Хэмилтон</b></p>
+					<a class="more g_a" href="">Подробнее...</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="clear"></div>
+		
+		<hr class="hr425">
+		
+		<div class="row">
+		<div id="turn-table" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<table>
+			<caption>Личный зачёт</caption> <!--*******************ТУРНИРНАЯ ТАБЛИЦА-->
+				<tr>
+					<th>№</th>
+					<th>Пилот</th>
+					<th>Команда</th>
+					<th>Очки</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Льюис Хэмилтон</td>
+					<td>Мерседес</td>
+					<td>75</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Валттери Боттас</td>
+					<td>Мерседес</td>
+					<td>54</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Себастьян Феттель</td>
+					<td>Феррари</td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Шарль Леклер</td>
+					<td>Феррари</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Макс Ферстаппен</td>
+					<td>Ред Булл</td>
+					<td>N</td>
+				</tr>
+			</table>
+			<a class="more_table" href="">Подробнее...</a>
+		</div>
+		<div id="team-table" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<table>
+			<caption>Кубок конструкторов</caption><!--**********************КУБОК КОНСТРУКТОРОВ-->
+				<tr>
+					<th>№</th>
+					<th>Команда</th>
+					<th>Очки</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Мерседес</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Феррари</td>
+					<td >N</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Ред Булл</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Рено</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Хаас</td>
+					<td>N</td>
+				</tr>
+			</table><br>
+			<a class="more_table" href="">Подробнее...</a>
+		</div>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="row">
+		<div id="photo" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><!--**********************ФОТОГРАФИИ********-->
+		<div class="last-photo">
+		<h2>Последние фотографии</h2>
+			
+			  <a data-exif="Exif #1" href="fancybox/src/images/1.jpg" data-fancybox="images">
+				  <img width="30%" src="fancybox/src/images/1.jpg" />
+			  </a>
+
+			  <a href="fancybox/src/images/2.jpg" data-fancybox="images">
+				  <img width="30%" src="fancybox/src/images/2.jpg" />
+			  </a>
+
+			  <a href="fancybox/src/images/3.jpg" data-fancybox="images">
+				  <img width="35%" src="fancybox/src/images/3.jpg" />
+			  </a>
+			  <p></p>
+			  <a data-exif="Exif #1" href="fancybox/src/images/9.jpg" data-fancybox="images">
+				  <img width="30%" src="fancybox/src/images/9.jpg" />
+			  </a>
+
+			  <a href="fancybox/src/images/10.jpg" data-fancybox="images">
+				  <img width="30%" src="fancybox/src/images/10.jpg" />
+			  </a>
+
+			  <a href="fancybox/src/images/12-1.jpg" data-fancybox="images">
+				  <img width="35%" src="fancybox/src/images/12-1.jpg" />
+			  </a><br>
+			<a class="more_gallery" href="photogallery.html">Больше фотографий...</a>
+			</div>
+		</div>
+		<div id="video" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><!--**************************************ВИДЕО-->
+			<div class="video_box">
+			<h2>Последние видео</h2>
+			<video class="width-video" controls="controls">
+			 <source src="video/video 1.mp4">
+			</video>
+			<video class="width-video" controls="controls">
+			 <source src="video/Opening Titles.mp4">
+			</video><br>
+			<a class="more_video" href="video.html">Архив видеозаписей...</a>
+			</div>
+		</div>
+		</div>
+		<div class="clear"></div>
+		
+	</div>
+
+</div> <!-- конец контейнера-->	
+	<!--******************************************* FOOTER *******************************************-->
+	<div id="footer">
+	<div class="row">
+		<div class="img-f1 col-lg-2 col-md-2 col-sm-2 col-xs-12"> <img class="img-footer-f1" src="images/f1.png" /> </div>
+		<div class="footer-text col-lg-8 col-md-8 col-sm-7 col-xs-12">
+			<p></p>
+			<p class="footer-align">FORMULA 1 | Новости из мира Формулы 1</p>
+			<p class="footer-align">На этом сайте собрана информация о кольцевых автогонках Формула 1.</p>
+			<p class="footer-align">Сайт разработан с использованием технологии CMS MODx.</p>
+		</div>
+		<div class="icon-footer col-lg-2 col-md-2 col-sm-3 col-xs-12">
+			<p></p>
+			<a class="more icon-footer-map" href="">Карта сайта</a>
+			<br class="br-mob">
+			<a class="more icon-footer-fb" href="">Обратная связь</a>
+			<br class="br-mob">
+			<a class="more icon-footer-sr" href="">Поиск по сайту</a>
+		</div>
+	</div>
+		<div class="clear"></div>
+	</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ -->    
+	 <script>jQuery(document).ready(function(){
+	  jQuery('.bxslider').bxSlider();
+	});</script>
+	<!-- <script>
+	autoplay    : true,
+    interval    : 4000
+	if (this.options.autoplay) { this._startSlideshow(); var _self = this; this.$el.mouseleave(function() { if (!_self.options.autoplay) { _self.options.autoplay = true; _self._startSlideshow(); } }); }
+	</script> -->
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

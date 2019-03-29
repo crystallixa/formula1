@@ -1,0 +1,1343 @@
+﻿/********************************************************** size размеры текста
+глобальная навигация 1.3em и 1em;
+подменю 1em;
+bxslider 1.2em;
+H2 2.6em;
+h3 1.6em;
+текст 1.2em;
+table 1.3em;
+caprtion 1.8em;
+signature 1.8em;
+footer 1.1em;
+ ссылка more_table на 991х 1.4em
+
+*****************************************************************************/
+
+.navbar-default,.container-fluid {background: #ff1e00 !important; }
+.container-fluid {margin-bottom: 15px; }
+
+/*768 - 906 улетает навигация из-за шрифта*/
+body {
+  margin: 0; 
+  background: white;
+  font-family:"Exo 2 Light" !important;
+}
+ @font-face {
+ font-family:"Exo 2 Bold";
+ src: url(fonts/Exo_2/Exo2-Bold.ttf);
+ }
+ @font-face {
+ font-family:"Exo 2 Light";
+ src: url(fonts/Exo_2/Exo2-Light.ttf);
+ }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
+	color: white !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #ff1e00 !important;
+	background: #fff !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { /*белый фон меню и красные буквы на АКТИВНОЙ странице*/
+	background-color: #fff !important;
+	color: #ff1e00 !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { /*при нажатии на МЕДИА*/
+	background-color: #fff !important;
+	color: #ff1e00 !important;
+	border-left: 1px solid #dbdbdb;
+	border-right: 1px solid #dbdbdb;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { /*выпадающее меню МЕДИА*/
+    color: #ff1e00 !important;
+}
+
+.dropdown-menu { /*выпадающее меню МЕДИА*/
+    min-width: 180px !important;
+    font-size: 1em !important;
+}
+
+
+.navbar-brand {
+    height: 60px !important; /*высота навигационной панели ???или лого???*/
+}
+
+
+
+.navbar { /*убирается отступ от контейнера*/
+    margin-bottom: 0px  !important;
+}
+
+/*@media all and (min-width:768px)*/
+.navbar-nav > li > a {
+    padding-top: 25px !important;  /*отступ панели сверху, чтобы белый прямоугольник был нормальный*/
+}
+
+
+.navbar-default .navbar-toggle { /*меняется цвет фона иконки мобильного меню на белый*/
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { /*меняется цвет фона иконки мобильного меню на белый*/
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar { /*меняется цвет чёрточек иконки мобильного меню на красный*/
+    background-color: #ff1e00 !important;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { /*убирается линия мобильного меню, которая перечёркивает логотипа*/
+    border: none !important;
+}
+
+.navbar-toggle { /*выровнять иконку мобильного меню*/
+    margin-top: 20px !important;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+
+
+
+.container {
+	padding: 0 !important;
+	box-shadow: 0 2px 0 0 #ECF1F2;
+	border-left: 1px solid #ECF1F2;
+	border-right: 1px solid #ECF1F2;
+	background: url(images/bg_04.png);
+}
+.container  a, .container a:hover, .container a:after {
+color: #ff1e00;
+}
+#header{}
+
+#header-image {
+ display: block; /* Для старых браузеров */
+ height: 100%; /* Высота шапки */
+/*  background: url(images/header2.jpg) no-repeat; */
+width: 100%;
+}
+
+.logo a:hover {
+background-color: transparent !important;
+}
+/* .logo a {
+padding: 4px !important;
+} */
+/* .top-logo  a:hover {background-color:pink !important;}
+ *//************************* НАВИГАЦИОННАЯ ПАНЕЛЬ *************************/
+
+
+ 
+ 
+*{box-sizing: border-box;}
+
+/* #nav {
+  background: #ff1e00;
+  box-shadow: 0 2px 0 0 #ECF1F2;
+  border-top: 1px solid #ECF1F2;
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  font-family:"Exo 2 Bold";
+
+}
+#nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+
+/************************* КОНТЕНТ *************************/
+.bxslider  {
+font-family:"Exo 2 Light" !important;
+color: #fff;
+display: block;
+font-size: 1.2em;
+padding: 10px; 
+}
+
+.container h2 {
+font-size: 2.6em;
+font-weight: 700;
+font-family:"Exo 2 Light";
+}
+#last-news {
+float: left;
+width:55%;
+padding: 0px 15px !important;
+}
+#last-news h2 {
+margin: 20px 0 20px 40px;
+}
+#stage {
+float: left;
+width:45%;
+padding: 0px 0px !important;
+}
+#next-stage h2 {
+margin: 20px 0 20px 40px;
+}
+#last-stage h2 {
+margin: 0px 0 20px 40px;
+}
+#stage h3{
+margin: 5px 0px 0px 0px;
+font-size: 1.6em;
+}
+#stage p {
+line-height: 1.2;
+}
+#next-stage{
+}
+#last-stage{
+clear: both;
+margin: 200px 0px 0px 0px !important;
+}
+.race-img {
+float:left;
+margin: 0px 0px 0px 10px;
+width: 30%;
+}
+.hr425 {
+display: none;
+}
+
+#text-stage {
+margin: -10px 10px 0px 10px;
+float:left;
+font-size: 1.2em;
+}
+#slider-news {
+margin: 20px;
+}
+/***************ТАБЛИЦА на главной странице Турнирная и Конструкторов***************/
+table, p, a, h1,h2,h3,h4,h5,h6 {
+font-family:"Exo 2 Light" !important;
+}
+#turn-table {
+width:50%;
+float: left;
+/* background-color: white; */
+/* border: 1px solid green; */
+}
+#team-table {
+width:50%;
+/* background-color: white; */
+/* border: 1px solid green; */
+}
+#turn-table table {
+text-align: center;
+font-size: 1.3em;
+margin: 0px 0px 20px 60px; /***************отступы СЛЕВА ***************/
+}
+#turn-table td {
+padding: 3px 24px 3px 24px !important;
+}
+#turn-table caption {
+font-size: 1.8em;
+margin: 0px;
+padding: 0;
+text-align: center;
+}
+.color-tr {
+background: #ffd8d8; /************ class="color-tr" выделение строк в таблице************/
+}
+th {
+font-weight: bold;
+border-bottom: 3px solid #636363;
+text-align: center !important;
+}
+#team-table table {
+text-align: center;
+font-size: 1.3em;
+/* margin: 0px 0px 20px 160px */; /***************отступы СЛЕВА ***************/
+}
+#team-table td {
+padding: 3px 4px 3px 4px !important;
+}
+#team-table caption {
+width: 550px;
+font-size: 1.8em;
+margin: 0px;
+padding: 0px;
+margin-left: -30px;
+}
+
+.more{
+color: #ff1e00;
+/* font-weight: bold; */
+}
+.more_gallery{
+color: #ff1e00;
+font-size: 1.2em;
+/* font-weight: bold; */
+}
+.more_video{
+color: #ff1e00;
+font-size: 1.2em;
+/* font-weight: bold; */
+}
+.more_table {
+margin: 0px 0px 0px 420px;
+color: #ff1e00;
+font-size: 1.2em;
+/* font-weight: bold; */
+}
+/******************************************* ФОТОГРАФИИ И ВИДЕО ВНИЗУ НА ГЛАВНОЙ СТРАНИЦЕ ********************************************/
+
+/* #lightbox {} */
+/*************************************** LIGHTBOX ***********************************/
+#photo {
+width: 50%;
+float: left;
+margin: 0px 0px 30px 0px; /**************отступ перед футером******************/
+padding: 0px;
+/* border: 1px solid green; */
+}
+.last-photo {
+margin: 0px 0px 0px 40px;
+}
+#video {
+width: 50%;
+float: left;
+margin: 0px 0px 30px 0px; /**************отступ перед футером******************/
+/* border: 1px solid green; */
+}
+.width-video{
+width: 49%;
+}
+.video_box {
+margin: 0px 0px 0px 0px;
+}
+
+/************отдельные страницы МЕДИА Фотогалерея и Видео****************************/
+#photogalery{
+margin-left: 20px;
+margin-bottom: 30px;
+}
+.align-img {
+margin: 8px 8px 8px 8px;
+width:31%;
+}
+.align-video {
+margin: 8px 8px 8px 8px;
+width: 31%;
+}
+#video-archive {
+margin-left: 20px;
+margin-bottom: 30px;
+}
+/**********LIGHTBOX*************/
+.modal-container {
+  max-width: 500px;
+  
+  padding: 0;
+  margin: 0;
+  border-radius: .3em;
+  box-shadow: 0 0.1em 0.4em rgba(0,0,0,.3);
+}
+
+.modal-title {
+  font-weight: 700;
+  padding: 1.5em;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.modal-body {
+  max-height: 50vh;
+  padding: 0 1.5em 1.5em 1.5em;
+  overflow-y: auto;
+}
+
+.modal-footer {
+  padding: 1.5em;
+  text-align: right;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+/* Custom entrance animation */
+
+.fancybox-slide--complete .modal-container {
+    -webkit-animation: slide-down .216s;
+    animation: slide-down .216s;
+}
+
+@-webkit-keyframes slide-down{
+  0% {
+    margin-top: -3em;
+    opacity: 0;
+  }
+  100%{
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down{
+  0% {
+    margin-top: -3em;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+/*Стили для примера fancyBox - Custom video dimensions*/
+.fancybox-slide--video .fancybox-content {
+	width  : 800px;
+	height : 600px;
+	max-width  : 80%;
+	max-height : 80%;
+  margin: 0;
+}
+
+/*************************************** СТРАНИЦА С ГОНЩИКАМИ ***************************************/
+#page-drivers {
+margin: 0px 0px 0px 100px;
+width: 85%;
+}
+#page-drivers  h2 {
+margin: 20px 0 20px -90px;
+}
+.table-img-drivers {
+margin: 0px 0px 5px 0px;
+border: 1px solid #cccccc;
+width: 95% !important;
+}
+/*************************************** СТРАНИЦА С БИОГРАФИЕЙ ************************************************/
+#driver-and-news {
+font-size: 1.2em;
+margin: 0px 0px 30px 0px;
+}
+
+.image-biography-and-news {
+width:45%;
+margin: 0px 20px 10px 20px;
+float: left;
+}
+/**************************************** СТРАНИЦА С ИСТОРИЕЙ КОМАНДЫ *****************************************/
+#team-story {
+font-size: 1.2em;
+margin: 0px 0px 0px 0px;
+}
+#tsh {float: left;}
+#imts {
+width:40%;
+float: right;
+margin: 10px 10px 10px 10px;
+}
+#imts-2 {
+width:30%;
+float: right;
+margin: 10px;
+}
+#textts{
+float: left;
+margin: 0px 90px 0px 90px;
+}
+#team-story h2 {
+margin: 0px 0px 0px 20px;
+}
+#team-story h3 {
+font-size: 1.6em;
+font-weight: 500;
+margin: 10px 0 0px 70px;
+}
+#opis {
+margin: 10px 0px 0px 90px;
+}
+.hr-ts {
+width: 95%;
+background-color: #ff1e00;
+height: 2px;
+}
+.img {
+width: 20%;
+}
+.im { /*****Изображение - логотип команды сверху справа на странице истории команды Mercedes и Renault**************/
+vertical-align: top;
+width: 90%;
+margin: 0px 10px 0px 0px;
+border: 1px solid #dbdbdb;
+}
+.im-2 { /**********Изображение - логотип команды сверху справа на странице истории команды Ferrari**************/
+vertical-align: top;
+width: 30%;
+margin: 20px 10px 30px 0px;
+}
+
+/**************************** СТРАНИЦА ТАБЛИЦА С ЛИЧНЫМ ЗАЧЁТОМ и КУБКОМ КОНСТРУКТОРОВ *************************************/
+#turn-table-page  table {
+text-align: center;
+font-size: 1.3em;
+margin: 0px 0px 20px 50px;
+
+white-space: nowrap; /******************Запрет переноса строк******************/
+}
+#turn-table-page td {
+padding: 3px 50px 3px 50px !important;
+border: 1px solid #cccccc;
+}
+#turn-table-page caption {
+font-size: 1.8em;
+margin: 10px 0px 0px 0px;
+padding: 0;
+}
+#turn-table-on-page {
+width:50%;
+float: left;
+/*  border: 1px solid green; */
+}
+#team-table-on-page {
+width:50%;
+float: left;
+/*  border: 1px solid green;  */
+}
+#team-table-on-page table {
+margin: 0px 0px 0px 200px;
+}
+
+/*************************************** СТРАНИЦА С НОВОСТЯМИ*******************************************/
+#news {
+margin: 0px 20px 30px 40px;
+font-size: 1.2em;
+}
+.img-news {
+width: 40%;
+margin: 0px 20px 10px 20px;
+float: left;
+}
+.hr-news {
+width: 80%;
+background-color: #ff1e00;
+height: 2px;
+}
+/***************************************СТРАНИЦА С ГОНКАМИ*******************************/
+#stage-stage {
+margin: 0px 40px 0px 40px;
+font-size: 1.2em;
+}
+.img-stage-stage {
+width: 40%;
+margin: 0px 20px 10px 20px;
+float: left;
+}
+.hr-stage-stage {
+width: 80%;
+background-color: #ff1e00;
+height: 2px;
+}
+#stage-next {
+margin: 0px 40px 30px 40px;
+font-size: 1.2em;
+}
+.img-stage-next {
+width: 50%;
+margin: 0px 20px 10px 20px;
+float: left;
+}
+.hr-stage-next {
+width: 90%;
+background-color: #ff1e00;
+height: 4px;
+}
+#race-table {margin: 0px 0px 0px 330px; }
+#race-table td{border: 1px solid white; }
+#race-table td {
+text-align: center;
+padding: 20px 120px 20px 120px;
+}
+#race-table tr:nth-child(even) {
+ background: #ffa99e;
+}
+/************************* ФУТЕР *************************/
+#footer {
+background-color: #4C4B4B;
+color: white;
+font-size: 1.1em;
+
+}
+#footer a, a:hover, a:after {
+color: #ff1e00;
+}
+
+.icon-footer-map:after {
+  content: "\f0e8";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.icon-footer-fb:after {
+  content: "\f075";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.icon-footer-sr:after {
+  content: "\f002";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.img-footer-f1{
+width:80%;
+margin: 20px 20px 20px 30px;
+float:left;
+}
+.footer-align{
+margin:2px 0px 0px 20px;
+text-align:center;
+/* float:left */;
+}
+.footer-text {
+color: white;
+}
+
+.clear {clear: both;}
+
+
+/* .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+} */
+/* .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************/
+/******************************************************************************************/
+/********************************* МЕДИА **************************************************/
+/*********************************ЗАПРОСЫ *************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+
+							/*************в файле бутстрапа есть следующее
+									@media (min-width: 1200px)
+									.container {
+										width: 1170px;
+									}
+
+									@media (min-width: 992px)
+									.container {
+										width: 970px;
+									}
+									@media (min-width: 768px)
+									.container {
+										width: 750px;
+									}
+							*****************/
+							
+		
+
+@media (min-width: 1025px){
+.container-fluid {font-size: 1.8em !important;} /*изменяется размер шрифта в нав.панели*/
+}			
+@media (max-width: 1024px) {/*изменяется размер шрифта в нав.панели*/
+.container-fluid {font-size: 1.2em !important;}
+}							
+@media (max-width: 1440px) {/******************************************************* 1440px ******************************************/
+	.container {
+	}
+/* 	#header-image {
+	display: block; */ /* Для старых браузеров */
+/* 	height: 140px; */ /* Высота шапки */
+/* 	background: url(images/header2.jpg) no-repeat;
+	background-size:1500px 140px;
+	}
+	#last-stage{
+	clear: both;
+	margin: 0px 0px 0px 0px !important;
+	} */
+	/* страница ГОНКИ */
+/* 	#race-table {margin: 0px 0px 0px 125px; }
+ */	
+	/*страница ГОНЩИКИ */
+/* 	#page-drivers {
+	margin: 0px 0px 0px 130px;
+	width: 80%;
+	} */
+}
+@media (max-width: 1366px) {/***************************************************** 1366px *******************************************/
+	.container {
+	/* width:1300px !important; */
+	}
+	
+/* 	#turn-table-on-page {
+	width:40%;
+	float: left;
+	}
+	#team-table-on-page {
+	width:40%;
+	margin: 0px 0px 0px 100px;
+	float: left;
+	} *//* 
+	#next-stage{
+	width:48%;
+	float:left;
+	}
+	#last-stage{
+	width:48%;
+	float:left;
+	} */
+/* 	#next-stage{
+	}
+	#last-stage{
+	clear: both;
+	} */
+	/* страница ГОНКИ */
+/* 	#race-table {margin: 0px 0px 0px 75px; } */
+	
+	/* страница ГОНЩИКИ (и команды???) */
+/* 	#page-drivers {
+	margin: 0px 0px 0px 120px;
+	width: 90%;
+	}
+	#page-drivers  h2 {
+	margin: 20px 0 20px -60px;
+	} */
+/* 	.table-img-drivers {
+	width: 85% !important;
+	} */
+}
+	
+@media (max-width: 1200px) {/************************************************** до 1200 ************************************************/
+
+
+ 
+	/* страница  ГЛАВНАЯ  новости и этапы */
+	#last-news {
+	float: none;
+	width:100%;
+	}
+	#stage {
+	width:100%;
+	}
+	#stage h2{
+	margin: 0px 0px 20px 50px;
+	}
+	#stage h3{
+	margin: 15px 0px 0px 0px;
+	font-size: 1.6em;
+	}
+	#text-stage {
+	margin: -10px 10px 0px 80px;
+	}
+	#text-stage p{
+	text-align: center;
+	}
+	#next-stage{
+	width:45%;
+	float:left;
+	margin: 0px 0px 0px 70px;
+	}
+	#last-stage{
+	width:45%;
+	float:left;
+	margin: 0px 0px 0px 0px !important;
+	clear: none;
+	border-left: 2px solid #ff1e01;
+	}
+	.race-img {
+	margin: 0px 10px 0px 100px;
+	width: 50%;
+	}
+	.g_a {
+	margin: 0px 0px 0px 82px;
+	}
+	/*страница ГЛАВНАЯ две таблицы снизу */
+ 	#turn-table {
+	width: 100%;
+	}
+	#turn-table caption {
+	font-size: 2em;
+	text-align:center;
+	}
+	#turn-table table {
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	}
+	#turn-table td {
+	padding: 3px 44px 3px 44px !important;
+	}
+ 	#team-table {
+	width: 100%;
+	}
+	#team-table caption {
+	font-size: 2em;
+	text-align:center;
+	}
+	#team-table table {
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px; 
+	}
+	#team-table td {
+	padding: 3px 44px 3px 44px !important;
+	} 
+	.more_table {
+	margin-left: 680px;
+	}
+	.more_table .more_gallery, .more_video {
+	font-size: 1.4em;
+	}
+		/* СТРАНИЦА С НОВОСТЯМИ */
+	#news {
+	margin: 0px 20px 30px 40px;
+	font-size: 1em;
+	}
+	#news h2 {
+	font-size: 1.4em;
+	}
+	.img-news {
+	width: 40%;
+	}
+	
+		/************отдельные страницы МЕДИА Фотогалерея и Видео****************************/
+	.align-video {
+	margin: 8px 8px 8px 8px;
+	width: 45%;
+	}
+	#video-archive {
+	margin-left: 70px;
+	margin-bottom: 30px;
+	}
+	
+	/* страница ТАБЛИЦА */
+	#turn-table-on-page {
+	float: none;
+	}
+	#turn-table-on-page  table {
+	margin: 0px 0px 0px 125px;
+	}
+	#team-table-on-page {
+	float: none;
+	margin: 0px 0px 30px 0px;
+	}
+	#team-table-on-page   table {
+	margin: 0px 0px 0px 270px;
+	}
+	#turn-table-page caption {
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	}
+	
+	/* страница ГОНКИ */
+	#race-table {margin: 0px 0px 0px 30px; }
+	#race-table td {
+	padding: 20px 80px 20px 80px;
+	white-space: nowrap; /******************Запрет переноса строк******************/
+	}
+		/* страница ГОНЩИКИ */
+	#page-drivers {
+	margin: 0px 0px 0px 100px;
+	width: 90%;
+	}
+	#page-drivers  h2 {
+	margin: 20px 0 20px -60px;
+	}
+	.table-img-drivers {
+	width: 85% !important;
+	}
+	
+	
+	/* футер */
+	.footer-align{
+	margin:2px 0px 0px 0px;
+	text-align:center;
+	}
+	.img-footer-f1{
+	width:100%;
+	}
+	.icon-footer-map , .icon-footer-fb,  .icon-footer-sr {
+	font-size: 0.9em;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px){ /************************************************** 768-992 ************************************************/
+
+/************отдельные страницы МЕДИА Фотогалерея и Видео****************************/
+	#photogalery{
+	margin-left: 35px;
+	}
+	.align-img {
+	width:45%;
+	}
+	.align-video {
+	margin: 8px 8px 8px 8px;
+	width: 45%;
+	}
+	#video-archive {
+	margin-left: 40px;
+	margin-bottom: 30px;
+	}
+	
+	/* страница  ГЛАВНАЯ  новости и этапы */
+
+	#stage h3{
+	margin: 15px 0px 0px 0px;
+	font-size: 1.6em;
+	}
+	#last-stage > #text-stage {
+	margin: -10px 10px 0px 70px;
+	}
+	#next-stage > #text-stage {
+	margin: -10px 10px 0px 40px;
+	}
+	#next-stage{
+	width:45%;
+	float:left;
+	margin: 0px 30px 0px 20px;
+	}
+	#last-stage {
+	width:45%;
+	float:left;
+	margin: 0px 0px 0px 0px !important;
+	clear: none;
+	border-left: 2px solid #ff1e01;
+	}
+	
+	#next-stage .race-img {
+	margin: 0px 10px 0px 70px;
+	width: 50%;
+	}
+	#last-stage .race-img {
+	margin: 0px 10px 0px 110px;
+	width: 50%;
+	}
+	/*страница ГЛАВНАЯ две таблицы снизу */
+	.more_table {
+	margin-left: 580px;
+	}
+	
+	/* ГЛАВНАЯ ФОТОГРАФИИ И ВИДЕО ВНИЗУ НА ГЛАВНОЙ СТРАНИЦЕ */
+
+/* #lightbox {} */
+/*************************************** LIGHTBOX ***********************************/
+	#photo {
+	width: 95%;
+	float: left;
+	margin-left: 30px;
+	/* border: 1px solid green; */
+	}
+	#photo h2, #video h2 {
+	font-size: 2.3em;
+	text-align: center;
+	}
+	#photo h2 {
+	margin: 0px 0px 10px -15px;
+	}
+	.last-photo {
+	margin: 0px 0px 0px 15px;
+	}
+	#video {
+	width: 95%;
+	float: left;
+	margin-left: 30px;
+	/* border: 1px solid green; */
+	}
+	.width-video{
+	width: 49%;
+	}
+	.video_box {
+	margin: 0px 0px 0px 0px;
+	}
+	
+}
+@media (min-width: 485px) and (max-width: 767px) {	
+	.img-footer-f1{
+ 	margin: 5px 20px 0px 230px !important;
+	}
+}
+
+
+@media (max-width: 767px) {/************************************************** 767px ************************************************/
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {/*изменяется цвет в выпадающих подменю в мобильной версии*/
+    color: #fff !important;
+}
+
+
+	.logo {
+	width: 40%;
+	}
+	/* ГЛАВНАЯ этапы */
+	#stage {
+	float: left;
+	/* width:auto; */
+	}
+	#stage h2 {
+	margin: 0px 0px 5px 0px;
+	text-align: center;
+	font-size: 1.8em;
+	}
+	#stage h3{
+	margin: 15px 0px 5px -10px;
+	font-size: 1.2em;
+	width: 400px;
+	text-align: center;
+	}
+	#next-stage{
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	}
+	#last-stage{
+	width: auto;
+	margin: 0px 0px 0px 0px !important;
+	}
+	.race-img {
+	display: none;
+	}
+	.g_a {
+	margin: 0px 0px 0px 150px;
+	}
+	#text-stage {
+	margin: -10px 0px 0px -20px;
+	float:left;
+	font-size: 1.2em;
+	}
+	.hr425 {
+	display: block;
+	width: auto;
+	background-color: #ff1e00;
+	height: 1px;
+	}
+	/* ГЛАВНАЯ таблицы */
+	#turn-table {
+	width: auto;
+	float: left;
+	margin: 0px 0px 0px 10px;
+	}
+	#team-table {
+	width: auto;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	}
+	#turn-table table {
+	text-align: center;
+	font-size: 1em;
+	margin: 0px 0px 20px 0px;
+	}
+	#turn-table td {
+	padding: 3px 4px 3px 4px !important;
+	}
+	#turn-table caption {
+	font-size: 1.8em;
+	margin: 0px;
+	padding: 0;
+	}
+	#team-table table {
+	text-align: center;
+	font-size: 1em;
+	margin: 0px 0px 0px 0px; /*эта штука отвечает за то, чтобы таблица не съезжала за край экрана*/
+	}
+	#team-table td {
+	padding: 3px 4px 3px 4px !important;
+	}
+	#team-table caption {
+	width: 300px;
+	font-size: 1.8em;
+	margin: 0px;
+	padding: 0px;
+	}
+	.more_table {
+	margin: 0px 0px 0px 150px;
+	color: #ff1e00;
+	font-size: 1.1em;
+}
+/* ГЛАВНАЯ ФОТОГРАФИИ И ВИДЕО ВНИЗУ НА ГЛАВНОЙ СТРАНИЦЕ */
+
+/* #lightbox {} */
+/*************************************** LIGHTBOX ***********************************/
+	#photo {
+	width: 95%;
+	float: left;
+	padding: 0px;
+	/* border: 1px solid green; */
+	}
+	#photo h2, #video h2 {
+	font-size: 2.3em;
+	text-align: center;
+	}
+	#photo h2 {
+	margin: 0px 0px 0px -15px;
+	}
+	.last-photo {
+	margin: 0px 0px 0px 25px;
+	}
+	#video {
+	width: 95%;
+	float: left;
+	/* border: 1px solid green; */
+	}
+	.width-video{
+	width: 49%;
+	}
+	.video_box {
+	margin: 0px 0px 0px 20px;
+	}
+	/* СТРАНИЦА С НОВОСТЯМИ */
+	#news {
+	margin: 0px 10px 30px 40px;
+	font-size: 1em;
+	}
+	#news h2 {
+	font-size: 1.4em;
+	}
+	.img-news {
+	width: 80%;
+	}
+	
+	/************отдельные страницы МЕДИА Фотогалерея и Видео****************************/
+	#photogalery h2{
+	font-size: 2em;
+	text-align: center;
+	width: 400px;
+	margin-left: -40px;
+	}
+	#photogalery{
+	margin-left: 30px;
+	}
+	.align-img {
+	margin: 0px 0px 8px 0px;
+	width:90%;
+	}
+	
+	.align-video {
+	margin: 8px 8px 8px 8px;
+	width: 90%;
+	}
+	#video-archive {
+	margin-left: 30px;
+	margin-bottom: 30px;
+	}
+	
+	/***************************************СТРАНИЦА С ГОНКАМИ*******************************/
+	.img-stage-stage {
+	width: 90%;
+	margin: 0px 20px 10px 20px;
+	float: left;
+	}
+	.hr-stage-stage {
+	width: 80%;
+	background-color: #ff1e00;
+	height: 2px;
+	}
+	#stage-next {
+	margin: 0px 40px 30px 40px;
+	font-size: 1.2em;
+	}
+	.img-stage-next {
+	width: 90%;
+	margin: 0px 20px 10px 20px;
+	float: left;
+	}
+	.hr-stage-next {
+	width: 90%;
+	background-color: #ff1e00;
+	height: 4px;
+	}
+	
+	#stage-stage h2 {
+	width: 400px;}
+	#stage-stage {
+	margin: 0px 20px 0px 20px;
+	font-size: 1.2em;
+	}
+	#race-table {margin: 0px 0px 0px 0px; }
+	#race-table td{border: 1px solid white; }
+	#race-table td {
+	text-align: center;
+	padding: 6px 2px 6px 2px;
+	}
+	#race-table tr:nth-child(even) {
+	background: #ffa99e;
+	}
+	
+	/* СТРАНИЦА ТАБЛИЦА С ЛИЧНЫМ ЗАЧЁТОМ и КУБКОМ КОНСТРУКТОРОВ */
+	#turn-table-page  table {
+	text-align: center;
+	font-size: 1em;
+	margin: 0px 0px 20px 10px;
+	white-space: nowrap; /******************Запрет переноса строк******************/
+	}
+	#turn-table-page td {
+	padding: 3px 15px 3px 15px !important;
+	border: 1px solid #cccccc;
+	}
+	#turn-table-page caption {
+	font-size: 1.8em;
+	margin: 10px 0px 0px 0px;
+	padding: 0;
+	}
+	
+	#turn-table-on-page {
+	float: left;
+	}
+	#team-table-on-page {
+	float: left;
+	clear: both;
+	margin: 0px 0px 0px 60px;
+	}
+	#turn-table-on-page  {
+	width: 200px;
+	margin: 0px 0px 0px 0px;
+	}
+	#team-table-on-page table {
+	margin: 0px 0px 0px 0px;
+	}
+	
+	/* СТРАНИЦА С ГОНЩИКАМИ и КОМАНДАМИ */
+	#page-drivers {
+	margin: 0px 40px 0px 40px;
+	
+	}
+	#page-drivers  h2 {
+	margin: 20px 0 20px 0px;
+	font-size: 2em;
+	}
+	.table-img-drivers {
+	margin: 0px 0px 5px 0px;
+	border: 1px solid #cccccc;
+	width: 85% !important;
+	}
+	/* СТРАНИЦА С БИОГРАФИЕЙ */
+	#driver-and-news {
+	font-size: 1.2em;
+	margin: 0px 0px 0px 0px;
+	}
+	.image-biography-and-news {
+	width:88%;
+	margin: 0px 20px 10px 20px;
+	float: left;
+	}
+	/**************************************** СТРАНИЦА С ИСТОРИЕЙ КОМАНДЫ *****************************************/
+	#team-story {
+	font-size: 1.2em;
+	margin: 0px 0px 0px 0px;
+	}
+	#imts-2 {
+	width:40%;
+	float: right;
+	margin: 10px;
+	}
+	#textts{
+	float: left;
+	margin: 0px 20px 0px 20px;
+	}
+	#team-story h2 {
+	margin: 0px 0px 0px 20px;
+	}
+	#team-story h3 {
+	font-size: 1.6em;
+	font-weight: 500;
+	margin: 10px 0 0px 70px;
+	}
+	#opis {
+	margin: 10px 0px 0px 10px;
+	}
+	.img {
+	width: 20%;
+	}
+	.im-2 { /**********Изображение - логотип команды сверху справа на странице истории команды Ferrari**************/
+	vertical-align: top;
+	width: 100%;
+	margin: 20px 10px 30px 0px;
+	}
+
+	
+	/* футер */
+	#footer {
+	font-size: 1.1em;
+	}
+	.icon-footer {
+	margin-left: 20px;
+	}
+	.icon-footer-map , .icon-footer-fb,  .icon-footer-sr {
+	font-size: 0.9em;
+	}
+	.icon-footer-map {
+	margin-left: 0px;
+	}
+	.icon-footer-fb {
+	margin-left: 0px;
+	}
+	.icon-footer-sr {
+	margin-left: 0px;
+	}
+	.img-footer-f1{
+	width:30%;
+ 	margin: 5px 20px 0px 130px;
+	}
+	.footer-align{
+	margin:2px 0px 0px 0px;
+	text-align:center;
+	}
+	.footer-text {
+	font-size: 0.7em;
+	}
+	.br-mob {
+	display: none;
+	}
+}
+
+@media (max-width: 354px) {
+	.icon-footer-map , .icon-footer-fb,  .icon-footer-sr {
+	font-size: 0.7em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

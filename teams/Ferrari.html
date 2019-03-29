@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style.css" type="text/css"/>
+    <title>FORMULA 1 | Сайт гоночной серии Формула 1</title>
+	<!--jQuery-->
+	<link href="../bxslider/dist/jquery.bxslider.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="../bxslider/dist/jquery.bxslider.js"></script>
+	
+	<!-- Font Awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+ <body>
+<!--*************************СОДЕРЖИМОЕ ВСЕЙ СТРАНИЦЫ - это класс container*************************-->
+<div class="container">
+ 	<div id="header">
+			<div id="header-image"></div>
+<!--****************************************НАВИГАЦИОННАЯ ПАНЕЛЬ****************************************-->
+
+			<div id="nav">
+				<ul class="topmenu">
+					<li><a href="../news.html">Новости</a></li>
+					<li><a href="../photogallery.html" class="active">Медиа</a>
+					  <ul class="submenu">
+						<li><a href="../photogallery.html">Фотогалерея</a></li>
+						<li><a href="../video.html">Видео</a></li>
+					  </ul>
+					</li>
+					<li><a href="../races.html">Гонки</a></li>
+					<li class="logo" ><a href="../index.html"><img src="../images/f1-logo.png"/></a></li> <!-- LOGO -->
+					<li><a href="../standings.html">Таблица</a></li>
+					<li><a href="../drivers.html">Гонщики</a></li>
+					<li><a href="../teams.html">Команды</a></li>
+				 </ul>
+			</div>
+			<div class="menu">
+			  <a href="../index.html"><img class="logo" src="../images/f1-logo.png"/></a> <!-- LOGO -->
+				<div class="menu__icon">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+				<div class="menu__links">
+					<a class="menu__links-item" href="../news.html">Новости</a>
+					<a class="menu__links-item" href="../photogallery.html">Медиа</a>
+					<a class="menu__links-item" href="../races.html">Гонки</a>
+					<a class="menu__links-item" href="../standings.html">Таблица</a>
+					<a class="menu__links-item" href="../drivers.html">Гонщики</a>
+					<a class="menu__links-item" href="../teams.html">Команды</a>
+				</div>
+			</div>
+			<script>
+			(function($){
+			  $(function() {
+				$('.menu__icon').on('click', function() {
+				  $(this).closest('.menu').toggleClass('menu_state_open');
+				});
+			  });
+			})(jQuery);
+			</script>
+	</div>
+	<!--******************************************* CONTENT *******************************************-->
+	<div id="content">
+		<h2></h2>
+		<div id="team-story">
+		<div id="tsh">
+			<h2>Феррари </h2>
+			<h3>Действующие пилоты: <br><a href="../drivers/Sebastian Vettel.html">- Себастьян Феттель [5]</a><br><a href="../drivers/Charles Leclerc.html">- Шарль Леклер [16]</a></h3>
+		</div>
+		<div id="imts-2" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			<img class="im-2" src="../images/drivers/teams/Ferrari-sm.jpg"/> 
+		</div>
+		
+		<div id="opis" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<p><b>Полное название:</b> Scuderia Ferrari Mission Winnow</p>
+					<p><b>Местоположение:</b> Маранелло, Италия</p>
+					<p><b>Босс:</b> Маттиа Бинотто</p>
+					<p><b>Технический директор:</b> TBC</p>
+					<p><b>Шасси:</b> SF90</p>
+					<p><b>Блок питания:</b> Ferrari</p>
+					<p><b>Первое появление:</b> 1950</p>
+					<p><b>Чемпионы мира:</b> 16</p>
+					<p><b>Победы:</b> 236</p>
+					<p><b>Поулы:</b> 215</p>
+					<p><b>Быстрые круги:</b> 247</p>
+		</div><div class="clear"></div>
+		<hr class="hr-ts">
+		<div id="textts">
+				<p class="text-ts"><b>Происхождение</b></p>
+				<p class="text-ts">
+				Команда Феррари основана Энцо Феррари в 1929 году в качестве спонсора для гонщиков-любителей в различных гонках, хотя сам Феррари участвовал в гонках на машинах Фиат и до этой даты. Идея возникла 16 ноября за ужином в Болонье, где Феррари обратился за финансовой помощью к Аугусто и Альфредо Каниато, наследникам текстильного производства, и состоятельному гонщику-любителю Марио Тадини. Затем он собрал команду, которая на своём пике включала более сорока пилотов, большинство из них выступали на машинах «Альфа Ромео». Сам Энцо продолжал принимать участие в гонках до рождения первого сына Дино в 1932 году.</p>
+				<br>
+				<p class="text-ts">Феррари руководил многими уже состоявшимися пилотами (особенно Тацио Нуволари, Джузеппе Кампари, Акилле Варци и Луи Широн) и несколькими талантливыми новичками (такими как Тандини, Гай Молл, Карло Пинтакудо и Антонио Бривио) из своей штаб-квартиры в Модене до 1938 года, когда он стал управляющим гоночным подразделением компании Альфа Ромео — Alfa Corse. В 1939 году он ушёл из Альфа Ромео, узнав о намерении компании выкупить его долю и поглотить команду. Его компания стала называться Auto Avio Costruzioni Ferrari, она производила станки в ожидании окончания четырёхлетнего запрета на участие в соревнованиях после ухода из Альфы.</p>
+				<br>
+				<p class="text-ts">Несмотря на соглашение с Альфа Ромео, Феррари немедленно начал разработку собственного гоночного автомобиля — Ferrari Tipo 815 с восьмицилиндровым двигателем объёмом 1,5 литра. Tipo 815, разработанные Альберто Массимино, стали первыми настоящими машинами Феррари, но после того как в 1940 году Альберто Аскари и маркиз Лотарио Рангони Макиавелли ди Модена участвовали на них в «Милле Милья», Вторая мировая война временно положила конец гонкам, и Tipo 815 больше не принимали участия в соревнованиях. Феррари продолжал производить станки, в 1943 году он перенёс штаб-квартиру в Маранелло, где она подверглась бомбардировке в 1944 году.</p>
+				<br>
+				<p class="text-ts">Правила для Мирового Чемпионата Гран-при были разработаны ещё до войны, но понадобилось несколько лет, чтобы они начали действовать. В это время Феррари возобновил свои работы в Маранелло и создал Ferrari Tipo 125 с 12-цилиндровым 1,5-литровым двигателем, который принимал участие в нескольких Гран-при, не входивших в чемпионат.</p>
+				<p class="text-ts">Скудерия Феррари (итал. Scuderia Ferrari) — итальянская автогоночная команда, представляющая собой подразделение автомобильной компании Феррари, занимающееся гонками. Хотя это подразделение продолжает заниматься гоночной деятельностью многочисленных клиентов Феррари и частных команд, его основные усилия и финансы сосредоточены на команде Формулы-1, Scuderia Ferrari Mission Winnow.</p>
+				<br>
+				<p class="text-ts">Команда принимает участие в гонках Формулы-1 с 1950 года по сей день и является самой старой и успешной командой в чемпионате. Многочисленных итальянских болельщиков команды часто называют «тифози». Scuderia Ferrari переводится с итальянского как «Конюшня Феррари», скудериями также иногда называют и другие гоночные команды, как Формулы-1, например, Scuderia Toro Rosso, так и никогда не выступавшие в Ф-1, как например американскую Scuderia Corsa.</p>
+				<br>
+				<p class="text-ts">Себастьян Феттель (Германия) — с 2015 года выступает за команду. Четырёхкратный чемпион мира (2010 — 2013 годы).
+				Шарль Леклер (Монако) — второй гонщик команды, успешно дебютировал в 2018 году в команде Sauber. Чемпион мира Формулы-2 в 2017 году. В 2019 году заменил Кими Райкконена, перешедшего на место монегаска в Sauber.
+				Больше всего чемпионских титулов команде Ferrari принёс немецкий гонщик Михаэль Шумахер. Он — единственный за всю историю Формулы-1 обладатель 7 чемпионских титулов, 5 из них завоевал вместе с Ferrari (в 2000—2004 гг.). В 2006 году, после победы на Гран-при Италии, Шумахер заявил, что покидает чемпионат. Однако он сохранил за собой место в Scuderia Ferrari. В обязанности семикратного чемпиона входило тестирование новых спортивных машин Ferrari. В том числе, он мог быть привлечён к тестам формульных болидов команды, если это было бы необходимо. На сезон 2010 года Шумахер завершил отношения с итальянской командой и подписал контракт боевого пилота с командой Mercedes.</p>
+				</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div>
+	
+	<!--******************************************* FOOTER *******************************************-->
+	<div id="footer">
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"> <img class="img-footer-f1" src="../images/f1.png" /> </div>
+		<div class="footer-text col-lg-8 col-md-8 col-sm-7 col-xs-12">
+			<p></p>
+			<p class="footer-align">FORMULA 1 | Новости из мира Формулы 1</p>
+			<p class="footer-align">На этом сайте собрана информация о кольцевых автогонках Формула 1.</p>
+			<p class="footer-align">Сайт разработан с использованием технологии CMS MODx.</p>
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+			<p></p>
+			<a class="more icon-footer-map" href="">Карта сайта</a>
+			<br class="br-mob">
+			<a class="more icon-footer-fb" href="">Обратная связь</a>
+			<br class="br-mob">
+			<a class="more icon-footer-sr" href="">Поиск по сайту</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ -->    
+	 <script>jQuery(document).ready(function(){
+	  jQuery('.bxslider').bxSlider();
+	});</script>
+	<!-- <script>
+	autoplay    : true,
+    interval    : 4000
+	if (this.options.autoplay) { this._startSlideshow(); var _self = this; this.$el.mouseleave(function() { if (!_self.options.autoplay) { _self.options.autoplay = true; _self._startSlideshow(); } }); }
+	</script> -->
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.js"></script>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

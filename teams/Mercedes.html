@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../style.css" type="text/css"/>
+    <title>FORMULA 1 | Сайт гоночной серии Формула 1</title>
+	<!--jQuery-->
+	<link href="../bxslider/dist/jquery.bxslider.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="../bxslider/dist/jquery.bxslider.js"></script>
+	
+	<!-- Font Awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+ <body>
+<!--*************************СОДЕРЖИМОЕ ВСЕЙ СТРАНИЦЫ - это класс container*************************-->
+<div class="container">
+ 	<div id="header">
+			<div id="header-image"></div>
+<!--****************************************НАВИГАЦИОННАЯ ПАНЕЛЬ****************************************-->
+
+			<div id="nav">
+				<ul class="topmenu">
+					<li><a href="../news.html">Новости</a></li>
+					<li><a href="../photogallery.html" class="active">Медиа</a>
+					  <ul class="submenu">
+						<li><a href="../photogallery.html">Фотогалерея</a></li>
+						<li><a href="../video.html">Видео</a></li>
+					  </ul>
+					</li>
+					<li><a href="../races.html">Гонки</a></li>
+					<li class="logo" ><a href="../index.html"><img src="../images/f1-logo.png"/></a></li> <!-- LOGO -->
+					<li><a href="../standings.html">Таблица</a></li>
+					<li><a href="../drivers.html">Гонщики</a></li>
+					<li><a href="../teams.html">Команды</a></li>
+				 </ul>
+			</div>
+			<div class="menu">
+			  <a href="../index.html"><img class="logo" src="../images/f1-logo.png"/></a> <!-- LOGO -->
+				<div class="menu__icon">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+				<div class="menu__links">
+					<a class="menu__links-item" href="../news.html">Новости</a>
+					<a class="menu__links-item" href="../photogallery.html">Медиа</a>
+					<a class="menu__links-item" href="../races.html">Гонки</a>
+					<a class="menu__links-item" href="../standings.html">Таблица</a>
+					<a class="menu__links-item" href="../drivers.html">Гонщики</a>
+					<a class="menu__links-item" href="../teams.html">Команды</a>
+				</div>
+			</div>
+			<script>
+			(function($){
+			  $(function() {
+				$('.menu__icon').on('click', function() {
+				  $(this).closest('.menu').toggleClass('menu_state_open');
+				});
+			  });
+			})(jQuery);
+			</script>
+	</div>
+	<!--******************************************* CONTENT *******************************************-->
+	<div id="content">
+		<h2></h2>
+		<div id="team-story">
+		<div id="tsh">
+			<h2>Мерседес </h2>
+			<h3>Действующие пилоты: <br><a href="../drivers/Lewis Hamilton.html">- Льюис Хэмилтон [44]</a><br><a href="../drivers/Valtteri Bottas.html">- Валттери Боттас [77]</a></h3>
+		</div>
+		<div id="imts">
+			<img class="im" src="../images/drivers/teams/Mercedes-sm.jpg"/> 
+		</div>
+		<div class="clear"></div>
+		<div id="opis">
+					<p><b>Полное название:</b> Mercedes AMG Petronas Motorsport</p>
+					<p><b>Местоположение:</b> Бракли, Великобритания</p>
+					<p><b>Босс:</b> Тото Вольфф</p>
+					<p><b>Технический директор:</b> Джеймс Эллисон</p>
+					<p><b>Шасси:</b> W10</p>
+					<p><b>Блок питания:</b> Mercedes</p>
+					<p><b>Первое появление:</b> 1970</p>
+					<p><b>Чемпионы мира:</b> 5</p>
+					<p><b>Победы:</b> 78</p>
+					<p><b>Поулы:</b> 93</p>
+					<p><b>Быстрые круги:</b> 57</p>
+		</div>
+		
+		<hr class="hr-ts">
+		<div id="textts">
+				<p class="text-ts"><b>1954-1955</b></p>
+				<p class="text-ts">В 1954 году команда Mercedes-Benz впервые приняла участие в чемпионате мира, используя усовершенствованные машины Mercedes-Benz W196. Чемпион мира 1951 года Хуан-Мануэль Фанхио в середине сезона перешёл из Maserati в Mercedes-Benz для дебюта на Гран-при Франции 4 июля 1954 года. Успехи не заставили себя ждать и в первой же гонке команда финишировала дублем Фанхио и Карла Клинга, а Ханс Херрманн смог установить быстрый круг. Фанхио ещё одержал три победы в Германии, Швейцарии и Италии и выиграл чемпионат.</p>
+				<br>
+				<p class="text-ts">Команда продолжила выступать на таком же высоком уровне и в сезоне 1955 года, где использовалась такая же машина. Команда Mercedes снова доминировала по ходу сезона. Фанхио победил в Аргентине, Бельгии, Нидерландах, а его новый напарник Стирлинг Мосс на Гран-при Великобритании. Фанхио и Мосс завершили сезон первым и вторым соответственно. 11 июня на 24 часах Ле-Мана, произошла страшнейшая в истории автоспорта трагедия. Смерть гонщика Mercedes Пьера Левега и 83 зрителей привела к отмене Гран-при Франции, Германии, Испании и Швейцарии. По окончании сезона концерн свернул участие в автогонках, включая Формулу-1.</p>
+				<p></p>
+				<p><b>1993-2009</b></p>
+				<p class="text-ts">Компания вернулась в Формулу-1 1993, для поставок команде Sauber моторов под маркой Ilmor, а в следующем году их сотрудничество стало официальным. В 1995 году концерн Mercedes переключился на поставку двигателей команде McLaren и купил часть акций команды. С 1995 по 2009 McLaren выиграла три титула в зачёте пилотов и один в зачёте конструкторов. В 2009 Mercedes также стал поставлять моторы командам Brawn GP и Force India, причём первая команда выиграла титулы в обоих зачётах.</p>
+				<br>
+				<p class="text-ts">Михаэль Шумахер тестирует болид Mercedes-Benz MGP W01 на трассе Херес в феврале 2010 года</p>
+				<br>
+				<p class="text-ts"><b>с 2010</b></p>
+				<p class="text-ts">16 ноября 2009 года было официально объявлено о том, что Mercedes-Benz выкупает команду Brawn, а Росс Браун остаётся в качестве руководителя команды. База команды осталась в Брэкли, Великобритания, которая находится менее чем в 45 километрах от завода моторов Mercedes-Benz в Бриксворте.</p>
+				<br>
+				<p class="text-ts">Нико Росберг был объявлен основным гонщиком команды 23 ноября 2009 года, а ровно через месяц семикратный чемпион Михаэль Шумахер объявил о возвращении Формулу-1, на этот раз с командой Mercedes-Benz. Пилоты Brawn 2009 года покинули команду. Дженсон Баттон заключил контракт с McLaren, а Рубенс Баррикелло перешёл в команду Williams. Приобретение команды Brawn означает, что Mercedes-Benz расстались с McLaren. 40 % акций McLaren, принадлежащих корпорации Daimler (которая владеет Mercedes) с января 2000 года, будут проданы обратно McLaren Group за 500 миллионов фунтов стерлингов. Одной из причин расставания Mercedes с McLaren стали «амбициозные планы по созданию дорожных автомобилей», поскольку McLaren планирует начать производство McLaren MP4-12C в 2011 году. Тем не менее Mercedes продолжит поставку двигателей для McLaren до конца 2014 года. Начиная с 2015 McLaren перейдет на двигатели Honda.</p>
+				<br>
+				<p class="text-ts">Начиная с 2010 года боевой состав пилотов, Михаэль Шумахер и Нико Росберг, оставался неизменным, вплоть до ухода из гонок Михаэля Шумахера после сезона 2012 года. Начиная с 2013 место семикратного чемпиона мира занял Льюис Хэмилтон. В 2013 году Mercedes завоевал вторую строчку в Кубке Конструкторов, уступив лишь команде Red Bull. В сезоне-2014 команда сохранила состав пилотов, создав невероятно быструю машину: шесть гонок подряд, начиная с первого же этапа, Гран-при Австралии, только гонщики Mercedes пересекали линию финиша первыми, создавая огромный отрыв от своих соперников к финишу.</p>
+				<br>
+				<p class="text-ts">C 2017 титульное название преобразилось в Mercedes AMG Petronas Motorsport.</p>
+				</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div>
+	
+	<!--******************************************* FOOTER *******************************************-->
+	<div id="footer">
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"> <img class="img-footer-f1" src="../images/f1.png" /> </div>
+		<div class="footer-text col-lg-8 col-md-8 col-sm-7 col-xs-12">
+			<p></p>
+			<p class="footer-align">FORMULA 1 | Новости из мира Формулы 1</p>
+			<p class="footer-align">На этом сайте собрана информация о кольцевых автогонках Формула 1.</p>
+			<p class="footer-align">Сайт разработан с использованием технологии CMS MODx.</p>
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+			<p></p>
+			<a class="more icon-footer-map" href="">Карта сайта</a>
+			<br class="br-mob">
+			<a class="more icon-footer-fb" href="">Обратная связь</a>
+			<br class="br-mob">
+			<a class="more icon-footer-sr" href="">Поиск по сайту</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ -->    
+	 <script>jQuery(document).ready(function(){
+	  jQuery('.bxslider').bxSlider();
+	});</script>
+	<!-- <script>
+	autoplay    : true,
+    interval    : 4000
+	if (this.options.autoplay) { this._startSlideshow(); var _self = this; this.$el.mouseleave(function() { if (!_self.options.autoplay) { _self.options.autoplay = true; _self._startSlideshow(); } }); }
+	</script> -->
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.js"></script>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
